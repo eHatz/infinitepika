@@ -20,13 +20,11 @@
 		$(window).scroll(function (event) {
 			if($(window).scrollTop() < 1500) {
 		    	run = true;
-		    	console.log('running')
 		    };
 		    console.log(run)
 			if($(window).scrollTop() > 15000 && run == true) {
 				$('html, body').animate({ scrollTop: 1000 }, 1000);
 				run = false;
-				console.log('runningggggggggg')
 			};
 		});
 		    
