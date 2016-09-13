@@ -16,20 +16,10 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		var run = true;
 		$(window).scroll(function (event) {
-			if($(window).scrollTop() < 15000) {
-		    	run = true;
-		    };
-		    console.log(run)
-			if($(window).scrollTop() >= 15000 && run == true) {
-				$('html, body').animate({ scrollTop: 1000 }, 'fast');
-				run = false;
+			if($(window).scrollTop() >= 10000) {
+				$('html, body').scrollTop(1000)
 			};
-			if($(window).scrollTop() > 18000) {
-				run = true;
-			}
-
 		});
 		    
 	</script>
